@@ -1,5 +1,5 @@
 # Sparkify Data Warehouse
-This project leverages Infrastructure as Code (IaC) on AWS to build a data warehouse for analyzing user activity on Sparkify by transforming multiple log files into a relational database using PostgreSQL.
+This project leverages Infrastructure as Code (IaC) on AWS to build a data warehouse for analyzing user activity on Sparkify by transforming multiple log files into a relational database using Amazon Redshift, which is based on PostgreSQL.
 
 ## Input Data
 The input data consists of a set of json files storing information on the song and artist and a second set of json files contain log information on user activity. The data is stored on AWS S3.

@@ -20,7 +20,7 @@ This project leverages Infrastructure as Code (IaC) on AWS to build a data wareh
   - Enable the analytics team to analyze song popularity, user behavior, and peak usage times.
 
 ## Architecture Diagram
-![Architecture Diagram](assets/dwh3.png)
+![Architecture Diagram](assets/dwh4.png)
 ## Input Data
 The input data consists of a set of json files storing information on the song and artist and a second set of json files contain log information on user activity. The data is stored on AWS S3.
 

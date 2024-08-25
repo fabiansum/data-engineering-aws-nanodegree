@@ -1,6 +1,26 @@
 # Sparkify Data Warehouse
 This project leverages Infrastructure as Code (IaC) on AWS to build a data warehouse for analyzing user activity on Sparkify by transforming multiple log files into a relational database using Amazon Redshift, which is based on PostgreSQL.
 
+## Business Requirements
+- **Cloud Data Migration**
+  - Migrate data from S3 to Redshift.
+- **ETL Pipeline Development**
+  - Extract user activity logs and song metadata from S3 and stage them as tables in Redshift.
+  - Transform the extracted data into Amazon Redshift.
+  - Load the data into fact and dimension tables using a star schema.
+- **Data Quality**
+  - Ensure data accuracy and remove duplicates during the ETL process.
+- **Performance Optimization**
+  - Optimize Redshift tables for fast query performance.
+<!-- - **Scalability**
+  - Design the ETL pipeline to handle increasing data volumes as Sparkify grows.
+- **Security**
+  - Secure data in Redshift with encryption and access controls. -->
+- **Support for Business Insight**
+  - Enable the analytics team to analyze song popularity, user behavior, and peak usage times.
+
+## Architecture Diagram
+![Architecture Diagram](assets/dwh3.png)
 ## Input Data
 The input data consists of a set of json files storing information on the song and artist and a second set of json files contain log information on user activity. The data is stored on AWS S3.
 
@@ -31,23 +51,7 @@ The ETL (Extract, Transform, Load) pipeline is designed to process and transform
    - After the transformation, the clean data is loaded into the fact and dimension tables designed in a star schema format.
    - The final tables are optimized for query performance, enabling efficient analysis of user activity, song popularity, and other business metrics.
 
-## Business Requirements
-- **Cloud Data Migration**
-  - Migrate data from S3 to Redshift.
-- **ETL Pipeline Development**
-  - Extract user activity logs and song metadata from S3.
-  - Transform and stage the extracted data into Amazon Redshift.
-  - Load the data into fact and dimension tables using a star schema.
-- **Data Quality**
-  - Ensure data accuracy and remove duplicates during the ETL process.
-- **Performance Optimization**
-  - Optimize Redshift tables for fast query performance.
-- **Scalability**
-  - Design the ETL pipeline to handle increasing data volumes as Sparkify grows.
-- **Security**
-  - Secure data in Redshift with encryption and access controls.
-- **Support for Business Insight**
-  - Enable the analytics team to analyze song popularity, user behavior, and peak usage times.
+
 
 ## STAR Schema Design
 The STAR schema consists of one fact table (songplays) and four dimension tables (users, songs, artists, time).

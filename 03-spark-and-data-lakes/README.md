@@ -47,11 +47,11 @@ This project focuses on building a data lakehouse solution using AWS Glue, S3, A
 - **Machine Learning Curated Data**: Aggregates step trainer readings with matching accelerometer data for machine learning.
 
 **How to Run the Project:**
-1. Upload.
-2. Use the provided SQL scripts to create Glue tables for the landing zones.
-3. Run the Glue Jobs to process the data through the Landing, Trusted, and Curated zones.
-4. Query the data in Athena and verify the row counts as per the expected output.
-5. Review the anonymized datasets in the Curated zone to ensure compliance with privacy regulations.
+1. Upload the data from the starter directory to the appropriate landing zones in your S3 bucket.
+1. Use the provided SQL scripts to create Glue tables for the landing zones.
+1. Run the Glue Jobs to process the data through the Landing, Trusted, and Curated zones.
+1. Query the data in Athena and verify the row counts as per the expected output.
+1. Review the anonymized datasets in the Curated zone to ensure compliance with privacy regulations.
 
 **Screenshots and Verification:**
 - Include screenshots showing query results from Athena for each stage (Landing, Trusted, Curated).

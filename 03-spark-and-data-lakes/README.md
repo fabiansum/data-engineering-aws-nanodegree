@@ -8,7 +8,7 @@ This project focuses on building a data lakehouse solution using AWS Glue, S3, A
 - Create trusted and curated datasets for machine learning model training.
 - Anonymize and sanitize customer data to remove personally identifiable information (PII).
 
-**Diagram Architure:**
+**Diagram Architecture:**
 
 ![Diagram Architecture](assets/diagrams/stedi-lake-house-diagram.png)
 
